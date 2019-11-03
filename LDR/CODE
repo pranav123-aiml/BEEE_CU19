@@ -1,19 +1,13 @@
-
-{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
-{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
-\pard\sa200\sl276\slmult1\f0\fs22\lang9 void setup()\par
-\{\par
- \par
-  pinMode(2, OUTPUT);\par
-  Serial.begin(9600);\par
-\}\par
-\par
-void loop()\par
-\{\par
-  int x=analogRead(A0);\par
-  Serial.println(x);\par
-  if (x<500)digitalWrite(2,HIGH);\par
-  else digitalWrite(2,LOW);\par
-  \par
-\}\par
+ void setup()
+{
+  pinMode(2, OUTPUT);
+  Serial.begin(9600);
+}
+void loop()
+{
+  int x=analogRead(A0);
+  Serial.println(x);
+  if (x<500)digitalWrite(2,HIGH);
+  else digitalWrite(2,LOW);
+  }
 }
